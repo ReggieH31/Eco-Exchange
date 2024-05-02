@@ -229,7 +229,7 @@ const CreatePost = () => {
               ref={imageRef}
               onChange={handleImageChange}
             />
-            <BsFillImageFill
+            <Button
               onClick={() => imageRef.current.click()}
               style={{
                 marginTop: "15px",
@@ -237,7 +237,11 @@ const CreatePost = () => {
                 cursor: "pointer",
               }}
               size={15}
-            />
+              mt={4}
+              >
+                Upload Image
+              </Button>
+            
             {selectedFile && (
               <Flex
                 mt={5}

@@ -5,7 +5,6 @@ import {  useNavigate } from "react-router-dom";
 
 
 
-
 const AuthPage = () => {
 
 	const history = useNavigate()
@@ -26,7 +25,7 @@ const AuthPage = () => {
 					{/* Right hand-side */}
 					<VStack spacing={4} align={"stretch"}>
 						<AuthForm />
-						<Button onClick={handleReset}>Forgot Password</Button>
+						<Button onClick={handleReset}>Forgot Password?</Button>
 						<Flex gap={5} justifyContent={"center"}>
 							{/*<Image src='/playstore.png' h={"10"} alt='Playstore logo' />
 							<Image src='/microsoft.png' h={"10"} alt='Microsoft logo' />*/}
